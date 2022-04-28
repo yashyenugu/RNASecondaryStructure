@@ -1,13 +1,11 @@
-set (EXECUTABLE_NAME intersection)
-set (INTERSECTION_OUTPUT_NAME "LineIntersection")
+set (EXECUTABLE_NAME predict)
+set (INTERSECTION_OUTPUT_NAME "RNAStructurePredictor")
 
 include (platform)
 
 set (LINK_LIBS "")
 
-list (APPEND LINK_LIBS structures)
-list (APPEND LINK_LIBS geometry)
-list (APPEND LINK_LIBS math)
+list (APPEND LINK_LIBS rna)
 
 add_executable(${EXECUTABLE_NAME} main.cpp)
 set_target_properties(${EXECUTABLE_NAME} PROPERTIES OUTPUT_NAME ${INTERSECTION_OUTPUT_NAME})

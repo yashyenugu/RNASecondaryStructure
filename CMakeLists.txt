@@ -52,7 +52,3 @@ if (BUILD_DOCUMENTATION)
         message (STATUS "Documentation not generated because Doxygen is required to generate the documentation. Please install it.")
     endif ()    
 endif (BUILD_DOCUMENTATION)
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
